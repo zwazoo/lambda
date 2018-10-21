@@ -101,7 +101,7 @@ select {
   transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
 
-input[type="text"]:focus,
+/* input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="number"]:focus,
@@ -112,7 +112,7 @@ select:focus {
 }
 textarea {
 
-}
+} */
 
 .ba-intro {
   background: #463f38 url(../img/Bg.jpg) no-repeat 50%;
@@ -182,4 +182,222 @@ textarea {
 
 .ba-menu li + li {
   padding-left: 25px;
+}
+
+.ba-title-decor {
+  color: #e4ca7a;
+  background: url(../img/decor.png) no-repeat 50% 100%;
+  padding-bottom: 30px;
+  margin-bottom: 27px;
+  text-align:center;
+}
+
+.ba-title-decor--light {
+  color:white;
+  background: url(../img/decor-light.png) no-repeat 50% 100%;
+}
+
+.ba-about {
+  padding: 54px 0 23px;
+}
+
+.ba-section-bg {
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.10);
+  background: linear-gradient(133deg, #fff, rgba(0,0,0,0.07)), url(../img/patern.png);
+}
+
+.ba-section-food-menu {
+  padding: 93px 0 40px;
+}
+
+.ba-section-image {
+  background: #000 url(../img/bg-salad.jpg) 50% no-repeat;
+  background-size: cover;
+  color:white;
+  padding: 100px 0 102px;
+}
+
+.ba-section-image--reviews {
+  background: #000 url(../img/bg-meat.jpg) 50% no-repeat;
+}
+
+.ba-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ba-flex-center {
+  justify-content:center;
+}
+
+.ba-review {
+  font:700 25px/1.8 "Gentium Book Basic", sans-serif;
+  color:#dde0df;
+  margin:0 0 20px;
+}
+
+.ba-review p {
+  margin-bottom: 18px;
+}
+
+.ba-review cite {
+  font:400 18px/1 Lato, sans-serif;
+  margin-top: 30px;
+}
+
+.ba-recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:70px;
+}
+
+.ba-recipes img + img {
+  margin-left:30px;
+}
+
+.ba-dark-box {
+  background: rgba(0,0,0,0.67);
+  padding: 70px 70px 75px;
+  text-align: center;
+}
+
+.ba-about-desc {
+padding: 42px 70px;
+}
+
+.ba-cook {
+  margin: 34px 0 0 70px;
+}
+
+.ba-dish {
+  margin-left: -80px;
+  max-width: initial;
+}
+
+.ba-row {
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.ba-row > [class*='ba-col-'] {
+  padding-left: 30px;
+}
+
+.ba-col-1 {
+  width:8.33%;
+}
+
+.ba-col-2 {
+  width:16.666%;
+}
+
+.ba-col-3 {
+  width:25%;
+}
+
+.ba-col-4 {
+  width:33.333%;
+}
+
+.ba-col-5 {
+  width:41.666%;
+}
+
+.ba-col-6 {
+  width:50%;
+}
+
+.ba-col-7 {
+  width:58.33%;
+}
+
+.ba-col-8 {
+  width:66.666%;
+}
+
+.ba-col-9 {
+  width:75%;
+}
+
+.ba-col-10 {
+  width:83.333%;
+}
+
+.ba-col-11 {
+  width:91.666%;
+}
+
+.ba-col-12 {
+  width:100%;
+}
+
+/* Menu */
+
+.ba-food-menu {
+  max-width: 430px;
+  margin: 0 auto 56px;
+}
+
+.ba-food-menu__title {
+  margin-bottom: 27px;
+}
+
+.ba-food-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ba-menu-dish--special {
+  position: relative;
+}
+
+.ba-menu-dish--special:before {
+  content: '';
+  position:absolute;
+  border: 1px solid rgba(200,159,45,0.6);
+  top: -8px;
+  right: -13px;
+  left: -13px;
+  bottom: -8px;
+}
+
+.ba-menu-dish--special:after {
+  content: attr(data-tip);
+  position:absolute;
+  right: -13px;
+  background: rgba(200,159,45,0.6);
+  color: white;
+  padding: 0 10px;
+  bottom: calc(100% + 8px);
+  font-size: 14px;
+}
+
+.ba-menu-dish p{
+  margin: 0;
+}
+
+.ba-menu-dish + .ba-menu-dish {
+  margin-top: 30px;
+}
+
+.ba-menu-dish__header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(200,159,45,0.6);
+  color: #c89f2d;
+  padding-bottom: 3px;
+  margin-bottom: 9px;
+}
+
+.ba-menu-dish__title {
+  margin: 0;
+  font-size: 21px;
+}
+
+.ba-menu-dish__price {
+  font: 400 21px/1 'Yeseva One', cursive;
 }
