@@ -22,7 +22,7 @@
         <a href="index.html" class="ba-logo">
           <img src="img/Logo.png" alt="lambda">
         </a>
-        <nav>
+        <nav class="ba-nav">
           <ul class="ba-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -31,6 +31,17 @@
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Reservations</a></li>
           </ul>
+          <div class="ba-socials">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+          </div>
         </nav>
       </div>
     </div>
@@ -77,7 +88,7 @@
               <div class="ba-recipes">
                 <img src="img/ingredient1.png" alt="ingredient">
                 <img src="img/ingredient2.png" alt="ingredient">
-                <img src="img/ingredient3.png" alt="ingredient"> 
+                <img src="img/ingredient3.png" alt="ingredient">
               </div>
               <!-- /.ba-recipes -->
             </div>
@@ -248,24 +259,78 @@
     </section>
 
     <section class="ba-section-image ba-section-image--reviews">
-        <div class="ba-container">
-          <div class="ba-flex-center ba-row">
-            <div class="ba-col-8">
-              <div class="ba-dark-box">
-                <h3 class="ba-title-decor ba-title-decor--light ">Guest Reviews</h3>
-                <blockquote class="ba-review"><p>
-                  If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+      <div class="ba-container">
+        <div class="ba-flex-center ba-row">
+          <div class="ba-col-8">
+            <div class="ba-dark-box">
+              <h3 class="ba-title-decor ba-title-decor--light ">Guest Reviews</h3>
+              <blockquote class="ba-review">
+                <p>
+                  If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
+                  back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
+                  coffees make us hard to resist! Stop in today and check us out!
                 </p>
                 <cite>- food inc, New York</cite>
-                   </blockquote>
-              </div>
+              </blockquote>
             </div>
-            <!-- /.ba-col-6 -->
+          </div>
+          <!-- /.ba-col-6 -->
+        </div>
+      </div>
+    </section>
+
+    <section class="ba-section-food-menu ba-section-bg">
+      <div class="ba-container">
+        <div class="ba-grid">
+          <img src="img/image2.jpg" alt="Dish">
+          <img src="img/image1.jpg" alt="Dish">
+          <div class="ba-booking">
+            <h3 class="ba-title-decor">Just the right food</h3>
+            <div class="ba-text-center">
+              <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
+                back for more. Perfect materials and freshly baked food.
+              </p>
+              <p>Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check
+                us out! Perfect materials and freshly baked food.</p>
+            </div>
+            <form class="ba-booking-form" action="#" method="post">
+              <div class="ba-booking-form__grid">
+                <label>
+                  <span class="ba-label">name</span>
+                  <input type="text" required placeholder="your name *" name="name">
+                </label>
+
+                <label>
+                  <span class="ba-label">Email</span>
+                  <input type="email" required placeholder="your email *" name="email">
+                </label>
+
+                <label>
+                  <span class="ba-label">Date</span>
+                  <input type="date" required name="date">
+                </label>
+
+                <label>
+                  <span class="ba-label">Party number</span>
+                  <select name="party">
+                    <option value="" hidden selected>party number</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </label>
+              </div>
+              <button type="submit" class="ba-button ba-button--primary">Book now!</button>
+            </form>
           </div>
         </div>
-  
-      </section>
+      </div>
+      <!-- ba-container -->
+    </section>
   </main>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/brands.js" integrity="sha384-lc/yFuYW3B0EW9B2QSpod2KeBxq6/ZizGwAW6mRLUe3kKUVlSBfDIVZKwKIz/DBg" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/fontawesome.js" integrity="sha384-ISRc+776vRkDOTSbmnyoZFmwHy7hw2UR3KJpb4YtcfOyqUqhLGou8j5YmYnvQQJ4" crossorigin="anonymous"></script>
 </body>
 
 </html>
