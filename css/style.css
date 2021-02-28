@@ -372,7 +372,7 @@ input[type="date"] {
   margin-left: 20px;
   max-width: 100%;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   .ba-dish {
     display:none;
   }
