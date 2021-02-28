@@ -24,13 +24,24 @@
         </a>
         <nav class="ba-nav">
           <ul class="ba-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#ingredients">Igredients</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#home" class="ba-menu__link">Home</a></li>
+            <li><a href="#about" class="ba-menu__link">About</a></li>
+            <li><a href="#ingredients" class="ba-menu__link">Igredients</a></li>
+            <li><a href="#menu" class="ba-menu__link">Menu</a></li>
+            <li><a href="#reviews" class="ba-menu__link">Reviews</a></li>
+            <li><a href="#reservations" class="ba-menu__link">Reservations</a></li>
           </ul>
+
+          <div class="ba-header__burger">
+            <a id="burger" class="ba-burger-box">
+              <svg viewBox="0 0 32 32" width="32" height="32">
+                <title>menu</title>
+                <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z" fill="#fff"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+
           <div class="ba-socials">
             <a href="#">
               <i class="fab fa-facebook-f"></i>
@@ -42,7 +53,7 @@
               <i class="fab fa-youtube"></i>
             </a>
           </div>
-        </nav>
+        
       </div>
     </div>
   </header>
@@ -59,7 +70,7 @@
     <section class="ba-about ba-section-bg" id="about">
       <div class="ba-container">
         <div class="ba-row">
-          <div class="ba-col-6">
+          <div class="ba-col-6 ba-col-small-12 ba-col-medium-12">
             <div class="ba-about-desc ba-text-center">
               <h3 class="ba-title-decor">Just the right food</h3>
               <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
@@ -69,7 +80,7 @@
             </div>
           </div>
 
-          <div class="ba-col-6">
+          <div class="ba-col-6 ba-col-small-12">
             <img class="ba-dish" src="img/tarelka.png" alt="tarelka">
           </div>
         </div>
@@ -79,7 +90,7 @@
     <section class="ba-section-image" id="ingredients">
       <div class="ba-container">
         <div class="ba-flex-end ba-row">
-          <div class="ba-col-6">
+          <div class="ba-col-6 ba-col-small-12">
             <div class="ba-dark-box">
               <h3 class="ba-title-decor ba-title-decor--light ">Fine ingredients</h3>
               <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
@@ -93,7 +104,7 @@
               <!-- /.ba-recipes -->
             </div>
           </div>
-          <!-- /.ba-col-6 -->
+          <!-- /.ba-col-6 ba-col-small-12 -->
         </div>
       </div>
 
@@ -102,7 +113,7 @@
     <section class="ba-section-food-menu ba-section-bg" id="menu">
       <div class="ba-container">
         <div class="ba-row">
-          <div class="ba-col-6">
+          <div class="ba-col-6 ba-col-small-12">
             <div class="ba-food-menu">
               <h3 class="ba-food-menu__title ba-title-decor">Appetisers</h3>
               <ul class="ba-food-menu__list">
@@ -176,8 +187,8 @@
               <!-- ul -->
             </div>
           </div>
-          <!-- /.ba-col-6 -->
-          <div class="ba-col-6">
+          <!-- /.ba-col-6 ba-col-small-12-->
+          <div class="ba-col-6 ba-col-small-12">
             <div class="ba-food-menu">
               <h3 class="ba-food-menu__title ba-title-decor">Starters</h3>
               <ul class="ba-food-menu__list">
@@ -261,7 +272,7 @@
     <section class="ba-section-image ba-section-image--reviews" id="reviews">
       <div class="ba-container">
         <div class="ba-flex-center ba-row">
-          <div class="ba-col-8">
+          <div class="ba-col-8 ba-col-small-12">
             <div class="ba-dark-box">
               <h3 class="ba-title-decor ba-title-decor--light ">Guest Reviews</h3>
               <blockquote class="ba-review">
@@ -274,7 +285,7 @@
               </blockquote>
             </div>
           </div>
-          <!-- /.ba-col-6 -->
+          <!-- /.ba-col-8 ba-col-small-12-->
         </div>
       </div>
     </section>
@@ -331,7 +342,7 @@
   <footer class="ba-footer">
     <div class="ba-container">
       <div class="ba-row">
-        <div class="ba-col-4">
+        <div class="ba-col-4 ba-col-small-12">
           <h4 class="ba-title-decor ba-title-decor--light">
             About Us
           </h4>
@@ -343,7 +354,7 @@
         </div>
         <!-- /.ba-col-4 -->
 
-        <div class="ba-col-4">
+        <div class="ba-col-4 ba-col-small-12">
           <h4 class="ba-title-decor ba-title-decor--light">
             Opening Hours
           </h4>
@@ -360,7 +371,7 @@
         </div>
         <!-- /.ba-col-4 -->
 
-        <div class="ba-col-4">
+        <div class="ba-col-4 ba-col-small-12">
           <h4 class="ba-title-decor ba-title-decor--light">
             Our Location
           </h4>
@@ -389,6 +400,8 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/brands.js" integrity="sha384-lc/yFuYW3B0EW9B2QSpod2KeBxq6/ZizGwAW6mRLUe3kKUVlSBfDIVZKwKIz/DBg"
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/fontawesome.js" integrity="sha384-ISRc+776vRkDOTSbmnyoZFmwHy7hw2UR3KJpb4YtcfOyqUqhLGou8j5YmYnvQQJ4"
